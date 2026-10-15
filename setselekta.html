@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SetSelekta - case study</title>
+<meta name="description" content="SetSelekta: a festival planner that turns a crew&#x27;s picks into one plan.">
+<meta property="og:title" content="SetSelekta - case study">
+<meta property="og:description" content="SetSelekta: a festival planner that turns a crew&#x27;s picks into one plan.">
+<meta property="og:image" content="https://hcocd.com/media/c90bc3d539f5b363af561812c733a607.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+/* ---- shared brand base: identical on every page ---- */
+body{margin:0;background:#E9E9E6}
+a{color:#111111;text-decoration:none}a:hover{color:#3C7A1E}
+.cd{font-family:'Barlow Condensed',sans-serif}
+.mark{flex:none;display:flex;align-items:center;color:#C8FF00}.mark svg{width:42px;height:auto;display:block}.foot-mark{width:48px;height:auto;display:block;color:#C8FF00}
+.para{clip-path:polygon(18% 0,100% 0,82% 100%,0 100%)}
+.nav{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;padding:12px 6px}
+.card{background:linear-gradient(135deg,rgba(255,255,255,.26) 0%,rgba(255,255,255,.08) 60%,rgba(255,255,255,.14) 100%);-webkit-backdrop-filter:blur(24px) saturate(160%) brightness(1.05);backdrop-filter:blur(24px) saturate(160%) brightness(1.05);border:1px solid rgba(255,255,255,.35);border-radius:0;box-shadow:inset 1px 1px 0 rgba(255,255,255,.55),inset -1px -1px 0 rgba(255,255,255,.12),0 10px 30px rgba(0,0,0,.28);color:#FFFFFF;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 32px;padding:18px 22px;min-width:280px;max-width:460px}
+.card .logo{color:#FFFFFF;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.card .meta{color:rgba(255,255,255,.88);text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;line-height:1}
+.meta{font-size:13px;color:#2E2E2C;line-height:1.4}
+.colL{flex:1 1 320px;background:#F6F6F4;padding:44px 36px;display:flex;flex-direction:column;gap:16px;box-sizing:border-box}
+.colR{flex:999 1 560px;min-width:0;background:#07070B;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;box-sizing:border-box}
+.h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:32px;line-height:1.04}
+.k{margin:0 0 4px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:#3C7A1E}
+.body{margin:0;font-size:16px;line-height:1.6;color:#3E3E3B}
+.quote{background:#FFFFFF;color:#111111;font-family:'Barlow Condensed',sans-serif;font-size:24px;line-height:1.25;text-align:center;padding:22px 30px;max-width:480px;align-self:flex-end;box-shadow:0 0 0 1px #111111}
+.more{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.02em;border-bottom:3px solid #C8FF00;align-self:flex-start;padding:6px 0}
+.m{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero{position:relative;width:100%;aspect-ratio:16 / 7;min-height:360px;overflow:hidden;background:#07070B}
+.herocard{position:absolute;right:32px;bottom:32px}
+a.card{text-decoration:none;cursor:pointer;transition:background .2s ease,transform .2s ease}
+a.card:hover{background:linear-gradient(135deg,rgba(255,255,255,.36) 0%,rgba(255,255,255,.16) 60%,rgba(255,255,255,.22) 100%);transform:translateY(-2px)}
+.go{display:inline-block;margin-left:10px;font-size:18px;line-height:1;color:#C8FF00;transition:transform .2s ease}
+a.card:hover .go{transform:translateX(4px)}
+a.more{transition:border-color .2s ease,padding .2s ease}a.more:hover{border-bottom-width:5px;color:#111111}
+.wrap{max-width:1360px;margin:0 auto}
+.site-head a{color:#FFFFFF}.site-head a:hover{color:#C8FF00}
+/* ---- page-specific ---- */
+.ph{position:relative;background:repeating-linear-gradient(135deg,#16161B 0 14px,#1C1C22 14px 28px);overflow:hidden}
+.phl{position:absolute;left:14px;bottom:12px;right:14px;font-size:12px;color:#B9B9C2;line-height:1.5}
+.mc{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#07070B}
+.ph-shot{position:relative;aspect-ratio:390/844;border:1px solid #26262C;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.ph-shot .mc{object-fit:cover;object-position:top}
+.ph-shot .cap{position:absolute;left:0;top:-30px;font-family:'Barlow Condensed',sans-serif;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#C8FF00}
+.chap{max-width:1360px;margin:0 auto;border-top:6px solid #C8FF00}
+.sg-wrap{width:100%;background:#0A0A0A;border:1px solid #2A2A28;font-family:'Space Grotesk','Arial Narrow',Arial,sans-serif;color:#EFEFEA}.sg-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px;padding:18px 18px 14px;border-bottom:1px solid #2A2A28}.sg-title{font-weight:700;font-size:20px;text-transform:uppercase;color:#CCFF00;letter-spacing:-.01em}.sg-sub{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8A8A93}.sg-head,.sg-body{display:grid;grid-template-columns:52px repeat(3,minmax(0,1fr))}.sg-stage{padding:12px 12px 10px;border-left:1px solid #2A2A28;display:flex;flex-direction:column;gap:4px;font-family:'JetBrains Mono',monospace;text-transform:uppercase}.sg-sname{font-size:12px;letter-spacing:.14em;color:#B8D84A}.sg-scount{font-size:11px;color:#8A8A93;text-transform:none}.sg-body{position:relative;height:440px;border-top:1px solid #2A2A28;margin-bottom:18px}.sg-times{position:relative;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8A93}.sg-times span{position:absolute;right:8px;transform:translateY(-50%)}.sg-col{position:relative;border-left:1px solid #2A2A28;background:linear-gradient(180deg,transparent 0 14.29%,#232321 14.29% calc(14.29% + 1px),transparent calc(14.29% + 1px) 42.86%,#232321 42.86% calc(42.86% + 1px),transparent calc(42.86% + 1px) 71.43%,#232321 71.43% calc(71.43% + 1px),transparent calc(71.43% + 1px))}.sg-card{position:absolute;left:6px;right:6px;box-sizing:border-box;padding:8px 10px;display:flex;flex-direction:column;gap:3px;overflow:hidden;border:1px solid #2A2A28;background:#1C1C1A}.sg-card.sel{background:#CCFF00;border-color:#CCFF00;color:#0A0A0A}.sg-card.clash{border-color:#FF0F6B}.sg-artist{font-weight:700;font-size:16px;line-height:1.1;text-transform:uppercase;padding-right:24px}.sg-card.clash .sg-artist{color:#FF0F6B;text-decoration:line-through}.sg-time,.sg-votes,.sg-flag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em}.sg-time{color:#CCFF00}.sg-card.sel .sg-time{color:#0A0A0A}.sg-votes{color:#8A8A93;text-transform:uppercase}.sg-card.sel .sg-votes{color:#0A0A0A;opacity:.75}.sg-flag{color:#FF0F6B;text-transform:uppercase;margin-top:2px}.sg-chk{position:absolute;top:8px;right:8px;width:20px;height:20px;background:#0A0A0A;color:#CCFF00;font-size:13px;line-height:20px;text-align:center}.sg-notes{margin:0;padding:14px 18px 18px 36px;border-top:1px solid #2A2A28;display:flex;flex-direction:column;gap:6px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.5;color:#C9C9D0}.sg-notes b{color:#CCFF00;font-weight:600}@media (max-width: 600px){.sg-head,.sg-body{grid-template-columns:40px repeat(3,minmax(0,1fr))}.sg-artist{font-size:13px;padding-right:20px}.sg-stage{padding:10px 6px}.sg-sname{font-size:10px;letter-spacing:.06em}.sg-card{left:3px;right:3px;padding:6px}.sg-chk{width:16px;height:16px;line-height:16px;font-size:11px;top:5px;right:5px}}
+.ssd-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}.ssd-step{background:#16161B;border-top:3px solid #C8FF00;padding:14px 14px 16px;display:flex;flex-direction:column;gap:6px}
+
+</style>
+<style>
+/* Static-site fixes: keep the email address inside narrow phones */
+a[href^="mailto:"]{overflow-wrap:anywhere;max-width:100%}
+footer > div > div{min-width:0}
+@media (max-width: 480px){
+  footer a[href^="mailto:"]{font-size:22px !important}
+  #contact a.cd[href^="mailto:"][style*="background"]{font-size:16px !important;padding:12px 16px !important}
+}
+</style>
+</head>
+<body>
+<div style="font-family: 'Barlow', sans-serif; color: #111111; background: #E9E9E6; min-height: 100vh;">
+
+<header class="site-head" style="background: #07070B; border-bottom: 1px solid #26262C;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;">
+<a href="./" style="display: flex; align-items: center; gap: 14px;"><span class="mark"><svg class="logo-mark" viewBox="0 0 1162 1014" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M11.1 1010.8C4.7 1007.7 1.0 1001.4 1.0 993.8C1.0 990.3 1.7 986.6 2.6 984.7C7.6 974.8 561.6 9.1 563.4 7.2C571.1 -1.4 586.5 -0.9 593.3 8.2C594.6 10.0 722.8 230.0 878.0 497.0C1158.1 978.7 1160.4 982.5 1160.8 988.6C1161.4 997.1 1157.8 1003.8 1150.5 1007.8C1146.9 1009.8 1206.7 1009.5 557.5 1011.5C-51.3 1013.4 16.5 1013.5 11.1 1010.8ZM729.5 977.9C942.9 977.2 1117.6 976.6 1117.8 976.5C1118.2 976.1 578.6 48.0 578.0 48.0C577.5 48.0 44.8 977.0 44.1 979.2C43.8 980.0 82.0 980.1 192.6 979.7C274.5 979.3 516.1 978.5 729.5 977.9ZM150.2 931.0C146.4 928.7 143.6 922.9 144.4 919.0C145.1 915.1 573.6 167.9 576.6 165.2C580.4 161.8 588.0 162.1 591.9 165.7C595.1 168.7 640.7 246.5 642.1 251.3C642.6 253.2 642.5 255.5 641.7 257.9C641.0 259.9 569.5 385.0 482.9 536.0C333.0 797.4 325.5 810.7 325.5 815.3C325.5 819.6 325.9 820.6 329.2 823.6L333.0 827.0L410.7 827.0C453.5 826.9 597.2 826.5 730.0 826.0C955.3 825.2 971.7 825.2 975.0 826.8C978.1 828.3 981.4 833.5 1003.4 871.3C1024.4 907.4 1028.3 914.7 1028.3 918.0C1028.3 922.4 1026.2 926.2 1022.5 928.6C1020.1 930.1 988.7 930.4 623.7 931.6C98.6 933.3 154.2 933.4 150.2 931.0ZM835.1 782.1C831.9 779.4 611.8 399.7 611.7 397.0C611.7 395.5 622.7 375.4 638.1 348.5L664.5 302.5L668.1 302.2C670.2 302.0 672.1 302.4 672.7 303.2C675.0 305.9 947.1 774.5 947.6 776.5C947.9 777.8 947.4 779.5 946.3 780.7C944.5 782.8 943.7 782.8 890.7 783.3C841.8 783.8 836.8 783.6 835.1 782.1Z"></path></svg></span><span class="cd" style="font-size: 24px; font-weight: 600;">Olivier Charest-Descomme</span></a>
+<nav style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center;">
+<a class="nav" href="./#work">Work</a>
+<a class="nav" href="about.html">About</a>
+<a class="nav" href="about.html#contact" style="background: #C8FF00; color: #111111; padding: 12px 20px;">Contact</a>
+</nav>
+</div>
+</header>
+
+<section style="max-width: 1360px; margin: 40px auto 0; background: #FFFFFF;">
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #0A0A0A; overflow: hidden;"><img class="m" src="media/c90bc3d539f5b363af561812c733a607.jpg" alt="SetSelekta: More sets together. A festival pick grid with crew picks and a Knock2 vs Tiësto clash"></div>
+<div style="padding: 56px 36px 40px; display: flex; flex-direction: column; gap: 18px;">
+<a class="cd" href="./#work" style="font-size: 18px; text-transform: uppercase; color: #4E4E4B;">← All work</a>
+<h1 class="cd" style="margin: 0; font-size: clamp(44px, 6vw, 88px); line-height: 0.95; font-weight: 500; max-width: 1000px;">SetSelekta: ending the group-chat argument over who to see</h1>
+<p class="body" style="font-size: 19px; max-width: 760px;">Four friends, six stages, forty sets, one group chat. SetSelekta turns everyone's picks into one plan the whole crew can follow. I designed, built and run it alone.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;"><a href="https://setselekta.com" class="cd" style="background: #C8FF00; font-weight: 600; font-size: 20px; text-transform: uppercase; padding: 14px 26px;">Open setselekta.com ↗</a></div>
+</div>
+<div style="position: relative; background: #07070B; padding: 72px 32px 120px; display: grid; grid-template-columns: repeat(3, minmax(0, 300px)); justify-content: center; gap: 32px;">
+<div class="ph-shot"><img class="mc" src="media/ef8fcb5bb22e626a38467b51bbf3ad2e.jpg" alt="SetSelekta pick view, EDC Las Vegas 2026"><span class="cap">01 · Pick</span></div>
+<div class="ph-shot"><img class="mc" src="media/a3ee187154c039c7ccfc32d4328ca36d.jpg" alt="SetSelekta group plan grid, EDC Las Vegas 2026"><span class="cap">02 · Group plan</span></div>
+<div class="ph-shot"><img class="mc" src="media/51983814e0afb5e551ab2351921b1098.jpg" alt="SetSelekta itinerary list, EDC Las Vegas 2026"><span class="cap">03 · Itinerary</span></div>
+<a class="card" style="position: absolute; right: 32px; bottom: 32px;" href="https://setselekta.com" target="_blank" rel="noopener"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="logo">SetSelekta</div><div class="meta">Founder · design, code, ops</div></div><div class="meta">Nov 2025 - now<span class="go">↗</span></div></a>
+</div>
+</section>
+
+<article class="chap" style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h2 class="h3">The product</h2>
+<div><p class="k">Problem</p><p class="body">Festival apps plan for one person. Groups screenshot lineups and argue in chat, and someone always ends up alone at a set nobody else wanted.</p></div>
+<div><p class="k">The idea</p><p class="body">Everyone votes on the sets they care about. SetSelekta turns the votes into one plan per day: when two sets clash, the one more of the crew wants wins.</p></div>
+<div><p class="k">In the field</p><p class="body">Used by my own crew to plan EDC Orlando and Ultra Miami.</p></div>
+</div>
+<div class="colR">
+<figure style="margin: 0; width: 100%; display: flex; flex-direction: column; gap: 22px;"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="cd" style="font-size: 30px; font-weight: 500; color: #FFFFFF;">How picks become one plan</div><p style="margin: 0; font-size: 14px; line-height: 1.5; color: #B9B9C2; max-width: 620px;">The actual logic behind the group plan, run separately for each festival day.</p></div><div class="ssd-steps"><div class="ssd-step"><span class="cd" style="font-size: 15px; font-weight: 600; color: #C8FF00;">01</span><span class="cd" style="font-size: 22px; font-weight: 500; color: #FFFFFF; line-height: 1.05;">Everyone picks</span><span style="font-size: 14px; line-height: 1.45; color: #C9C9D0;">Each crew member taps the sets they want to see.</span></div><div class="ssd-step"><span class="cd" style="font-size: 15px; font-weight: 600; color: #C8FF00;">02</span><span class="cd" style="font-size: 22px; font-weight: 500; color: #FFFFFF; line-height: 1.05;">Picks become votes</span><span style="font-size: 14px; line-height: 1.45; color: #C9C9D0;">Every pick is one vote. A set four friends picked has four votes.</span></div><div class="ssd-step"><span class="cd" style="font-size: 15px; font-weight: 600; color: #C8FF00;">03</span><span class="cd" style="font-size: 22px; font-weight: 500; color: #FFFFFF; line-height: 1.05;">Rank the sets</span><span style="font-size: 14px; line-height: 1.45; color: #C9C9D0;">Most votes first. On a tie, the earlier set goes first.</span></div><div class="ssd-step"><span class="cd" style="font-size: 15px; font-weight: 600; color: #C8FF00;">04</span><span class="cd" style="font-size: 22px; font-weight: 500; color: #FFFFFF; line-height: 1.05;">Resolve clashes</span><span style="font-size: 14px; line-height: 1.45; color: #C9C9D0;">Down the list, a set joins the day unless it overlaps one already in by more than 5 minutes.</span></div><div class="ssd-step"><span class="cd" style="font-size: 15px; font-weight: 600; color: #C8FF00;">05</span><span class="cd" style="font-size: 22px; font-weight: 500; color: #FFFFFF; line-height: 1.05;">Crew tweaks</span><span style="font-size: 14px; line-height: 1.45; color: #C9C9D0;">Anyone can force a set in or out. Forced clashes are flagged, not hidden.</span></div></div><div class="sg-wrap"><div class="sg-top"><span class="sg-title">Example night</span><span class="sg-sub">4 sets · 3 stages · group plan in lime</span></div><div class="sg-head"><div></div><div class="sg-stage"><span class="sg-sname">Main stage</span><span class="sg-scount">2 sets</span></div><div class="sg-stage"><span class="sg-sname">Stage 2</span><span class="sg-scount">1 set</span></div><div class="sg-stage"><span class="sg-sname">Stage 3</span><span class="sg-scount">1 set</span></div></div><div class="sg-body"><div class="sg-times" aria-hidden="true"><span style="top: 14.29%;">12AM</span><span style="top: 42.86%;">11PM</span><span style="top: 71.43%;">10PM</span><span style="top: 100%;">9PM</span></div><div class="sg-col"><div class="sg-card sel" style="top: 0%; height: 30.95%;"><span class="sg-chk" aria-hidden="true">✓</span><span class="sg-artist">Set D</span><span class="sg-time">23:25–00:30</span><span class="sg-votes">2 votes</span></div><div class="sg-card sel" style="top: 71.43%; height: 28.57%;"><span class="sg-chk" aria-hidden="true">✓</span><span class="sg-artist">Set A</span><span class="sg-time">21:00–22:00</span><span class="sg-votes">3 votes</span></div></div><div class="sg-col"><div class="sg-card clash" style="top: 57.14%; height: 28.57%;"><span class="sg-artist">Set B</span><span class="sg-time">21:30–22:30</span><span class="sg-votes">1 vote</span><span class="sg-flag">Clash · dropped</span></div></div><div class="sg-col"><div class="sg-card sel" style="top: 28.57%; height: 28.57%;"><span class="sg-chk" aria-hidden="true">✓</span><span class="sg-artist">Set C</span><span class="sg-time">22:30–23:30</span><span class="sg-votes">2 votes</span></div></div></div><ol class="sg-notes"><li><b>A</b> · 3 votes, most wanted, goes in first.</li><li><b>C</b> · 2 votes, no clash, kept.</li><li><b>D</b> · 2 votes, overlaps C by 5 min. That&#39;s inside the grace window, so it&#39;s kept.</li><li><b>B</b> · 1 vote, clashes with A for 30 min, dropped.</li></ol></div></figure>
+</div>
+</article>
+
+<article class="chap" style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h2 class="h3">How it's built</h2>
+<div><p class="k">Stack</p><p class="body">Vanilla HTML, CSS and JavaScript on a PHP backend, built with AI-assisted development. Deliberately simple so one person can own spec, design, code, deploys and production bugs.</p></div>
+<div><p class="k">Under the hood</p><p class="body">Gap detection for festival days that run past midnight, schedules exported as phone wallpapers rendered on canvas, picks synced across browser tabs, and layouts tuned across five breakpoints.</p></div>
+</div>
+<div class="colL" style="background: #FFFFFF; flex: 999 1 560px;">
+<h2 class="h3">What I learned</h2>
+<p class="body" style="font-size: 19px;">AI made shipping a working app almost trivial. Getting it good was the hard part - the festival grid took the most rounds, because what made sense in my head wasn't usable on a phone screen. The site cost less than I expected. Merch, marketing and social are where it got expensive - every one costs either time or money, usually both.</p>
+</div>
+</article>
+
+<a href="make.html" style="display: block; background: #C8FF00;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 48px 36px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+<div class="cd" style="font-size: 18px; text-transform: uppercase; letter-spacing: .04em;">Next</div>
+<div class="cd" style="font-size: 48px; font-weight: 500;">Design to make →</div>
+</div>
+</a>
+<footer style="background: #111111; color: #EDEDEB;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 64px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<svg class="foot-mark" viewBox="0 0 1162 1014" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M11.1 1010.8C4.7 1007.7 1.0 1001.4 1.0 993.8C1.0 990.3 1.7 986.6 2.6 984.7C7.6 974.8 561.6 9.1 563.4 7.2C571.1 -1.4 586.5 -0.9 593.3 8.2C594.6 10.0 722.8 230.0 878.0 497.0C1158.1 978.7 1160.4 982.5 1160.8 988.6C1161.4 997.1 1157.8 1003.8 1150.5 1007.8C1146.9 1009.8 1206.7 1009.5 557.5 1011.5C-51.3 1013.4 16.5 1013.5 11.1 1010.8ZM729.5 977.9C942.9 977.2 1117.6 976.6 1117.8 976.5C1118.2 976.1 578.6 48.0 578.0 48.0C577.5 48.0 44.8 977.0 44.1 979.2C43.8 980.0 82.0 980.1 192.6 979.7C274.5 979.3 516.1 978.5 729.5 977.9ZM150.2 931.0C146.4 928.7 143.6 922.9 144.4 919.0C145.1 915.1 573.6 167.9 576.6 165.2C580.4 161.8 588.0 162.1 591.9 165.7C595.1 168.7 640.7 246.5 642.1 251.3C642.6 253.2 642.5 255.5 641.7 257.9C641.0 259.9 569.5 385.0 482.9 536.0C333.0 797.4 325.5 810.7 325.5 815.3C325.5 819.6 325.9 820.6 329.2 823.6L333.0 827.0L410.7 827.0C453.5 826.9 597.2 826.5 730.0 826.0C955.3 825.2 971.7 825.2 975.0 826.8C978.1 828.3 981.4 833.5 1003.4 871.3C1024.4 907.4 1028.3 914.7 1028.3 918.0C1028.3 922.4 1026.2 926.2 1022.5 928.6C1020.1 930.1 988.7 930.4 623.7 931.6C98.6 933.3 154.2 933.4 150.2 931.0ZM835.1 782.1C831.9 779.4 611.8 399.7 611.7 397.0C611.7 395.5 622.7 375.4 638.1 348.5L664.5 302.5L668.1 302.2C670.2 302.0 672.1 302.4 672.7 303.2C675.0 305.9 947.1 774.5 947.6 776.5C947.9 777.8 947.4 779.5 946.3 780.7C944.5 782.8 943.7 782.8 890.7 783.3C841.8 783.8 836.8 783.6 835.1 782.1Z"></path></svg>
+<div class="cd" style="font-size: 18px; text-transform: uppercase; letter-spacing: .04em; color: #A9A9B2;">Open to product roles - especially where software meets manufacturing · Toronto / GTA, hybrid or on-site · English / Français</div>
+<a href="mailto:ocharestdescomme@gmail.com" class="cd" style="color: #FFFFFF; font-size: clamp(30px, 4vw, 52px); font-weight: 500;">ocharestdescomme@gmail.com</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 22px;">
+<a class="nav" href="https://www.linkedin.com/in/ocharest-descomme/" style="color: #FFFFFF;">LinkedIn</a>
+<a class="nav" href="https://setselekta.com" style="color: #FFFFFF;">SetSelekta</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
+(function () {var go = function () { try { document.querySelectorAll('video').forEach(function (v) { v.muted = true; v.loop = true; v.playsInline = true; if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } }); } catch (e) {} }; go(); setTimeout(go, 400); setTimeout(go, 1500); try { document.querySelectorAll('video').forEach(function (v) { v.addEventListener('canplay', go, { once: true }); }); } catch (e) {}})();
+</script>
+</body>
+</html>

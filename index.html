@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olivier Charest-Descomme - Home</title>
+<meta name="description" content="Olivier Charest-Descomme - product manager and maker in Toronto. Software that meets manufacturing: Zeno (3M, Ford), SetSelekta, wraps and carbon fibre.">
+<meta property="og:title" content="Olivier Charest-Descomme - Home">
+<meta property="og:description" content="Olivier Charest-Descomme - product manager and maker in Toronto. Software that meets manufacturing: Zeno (3M, Ford), SetSelekta, wraps and carbon fibre.">
+<meta property="og:image" content="https://hcocd.com/media/og.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+/* ---- shared brand base: identical on every page ---- */
+body{margin:0;background:#E9E9E6}
+a{color:#111111;text-decoration:none}a:hover{color:#3C7A1E}
+.cd{font-family:'Barlow Condensed',sans-serif}
+.mark{flex:none;display:flex;align-items:center;color:#C8FF00}.mark svg{width:42px;height:auto;display:block}.foot-mark{width:48px;height:auto;display:block;color:#C8FF00}
+.para{clip-path:polygon(18% 0,100% 0,82% 100%,0 100%)}
+.nav{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:500;letter-spacing:.02em;text-transform:uppercase;padding:12px 6px}
+.card{background:linear-gradient(135deg,rgba(255,255,255,.26) 0%,rgba(255,255,255,.08) 60%,rgba(255,255,255,.14) 100%);-webkit-backdrop-filter:blur(24px) saturate(160%) brightness(1.05);backdrop-filter:blur(24px) saturate(160%) brightness(1.05);border:1px solid rgba(255,255,255,.35);border-radius:0;box-shadow:inset 1px 1px 0 rgba(255,255,255,.55),inset -1px -1px 0 rgba(255,255,255,.12),0 10px 30px rgba(0,0,0,.28);color:#FFFFFF;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 32px;padding:18px 22px;min-width:280px;max-width:460px}
+.card .logo{color:#FFFFFF;text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.card .meta{color:rgba(255,255,255,.88);text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;line-height:1}
+.meta{font-size:13px;color:#2E2E2C;line-height:1.4}
+.colL{flex:1 1 320px;background:#F6F6F4;padding:44px 36px;display:flex;flex-direction:column;gap:16px;box-sizing:border-box}
+.colR{flex:999 1 560px;min-width:0;background:#07070B;padding:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;box-sizing:border-box}
+.h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:32px;line-height:1.04}
+.k{margin:0 0 4px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:#3C7A1E}
+.body{margin:0;font-size:16px;line-height:1.6;color:#3E3E3B}
+.quote{background:#FFFFFF;color:#111111;font-family:'Barlow Condensed',sans-serif;font-size:24px;line-height:1.25;text-align:center;padding:22px 30px;max-width:480px;align-self:flex-end;box-shadow:0 0 0 1px #111111}
+.more{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.02em;border-bottom:3px solid #C8FF00;align-self:flex-start;padding:6px 0}
+.m{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero{position:relative;width:100%;aspect-ratio:16 / 7;min-height:360px;overflow:hidden;background:#07070B}
+.herocard{position:absolute;right:32px;bottom:32px}
+a.card{text-decoration:none;cursor:pointer;transition:background .2s ease,transform .2s ease}
+a.card:hover{background:linear-gradient(135deg,rgba(255,255,255,.36) 0%,rgba(255,255,255,.16) 60%,rgba(255,255,255,.22) 100%);transform:translateY(-2px)}
+.go{display:inline-block;margin-left:10px;font-size:18px;line-height:1;color:#C8FF00;transition:transform .2s ease}
+a.card:hover .go{transform:translateX(4px)}
+a.more{transition:border-color .2s ease,padding .2s ease}a.more:hover{border-bottom-width:5px;color:#111111}
+.wrap{max-width:1360px;margin:0 auto}
+.site-head a{color:#FFFFFF}.site-head a:hover{color:#C8FF00}
+/* ---- page-specific ---- */
+.heroband{background:#07070B;color:#EDEDEB}
+.cards{display:flex;justify-content:center;align-items:center;padding:8px 24px 72px}
+.pc{position:relative;display:block;flex:0 1 380px;aspect-ratio:3 / 4;overflow:hidden;background:#16161B;color:#FFFFFF}
+.pc+.pc{margin-left:14px}
+.pc.big{flex-basis:430px;aspect-ratio:3 / 4.1;z-index:2}
+.pc .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,7,11,0) 40%,rgba(7,7,11,.85) 100%)}
+.pc .lab{position:absolute;left:0;right:0;bottom:12%;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.pc .t{font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:64px;line-height:1;color:#FFFFFF}
+.pc .s{font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:#E3E3E8}
+.pc:hover .t{color:#C8FF00}
+@media (max-width: 760px){.cards{flex-direction:column;gap:12px}.pc,.pc.big{flex-basis:auto;width:86%;aspect-ratio:4 / 3}.pc+.pc{margin-left:0}.pc .t{font-size:48px}}
+.ph{position:relative;background:repeating-linear-gradient(135deg,#16161B 0 14px,#1C1C22 14px 28px);overflow:hidden}
+.phl{position:absolute;left:14px;bottom:12px;right:14px;font-size:12px;color:#B9B9C2;line-height:1.5}
+.mc{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;background:#07070B}
+.chap{max-width:1360px;margin:0 auto 72px;border-top:6px solid #C8FF00}
+</style>
+<style>
+/* Static-site fixes: keep the email address inside narrow phones */
+a[href^="mailto:"]{overflow-wrap:anywhere;max-width:100%}
+footer > div > div{min-width:0}
+@media (max-width: 480px){
+  footer a[href^="mailto:"]{font-size:22px !important}
+  #contact a.cd[href^="mailto:"][style*="background"]{font-size:16px !important;padding:12px 16px !important}
+}
+</style>
+</head>
+<body>
+<div style="font-family: 'Barlow', sans-serif; color: #111111; background: #E9E9E6; min-height: 100vh;">
+
+<header class="site-head" style="background: #07070B; border-bottom: 1px solid #26262C;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;">
+<a href="./" style="display: flex; align-items: center; gap: 14px;"><span class="mark"><svg class="logo-mark" viewBox="0 0 1162 1014" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M11.1 1010.8C4.7 1007.7 1.0 1001.4 1.0 993.8C1.0 990.3 1.7 986.6 2.6 984.7C7.6 974.8 561.6 9.1 563.4 7.2C571.1 -1.4 586.5 -0.9 593.3 8.2C594.6 10.0 722.8 230.0 878.0 497.0C1158.1 978.7 1160.4 982.5 1160.8 988.6C1161.4 997.1 1157.8 1003.8 1150.5 1007.8C1146.9 1009.8 1206.7 1009.5 557.5 1011.5C-51.3 1013.4 16.5 1013.5 11.1 1010.8ZM729.5 977.9C942.9 977.2 1117.6 976.6 1117.8 976.5C1118.2 976.1 578.6 48.0 578.0 48.0C577.5 48.0 44.8 977.0 44.1 979.2C43.8 980.0 82.0 980.1 192.6 979.7C274.5 979.3 516.1 978.5 729.5 977.9ZM150.2 931.0C146.4 928.7 143.6 922.9 144.4 919.0C145.1 915.1 573.6 167.9 576.6 165.2C580.4 161.8 588.0 162.1 591.9 165.7C595.1 168.7 640.7 246.5 642.1 251.3C642.6 253.2 642.5 255.5 641.7 257.9C641.0 259.9 569.5 385.0 482.9 536.0C333.0 797.4 325.5 810.7 325.5 815.3C325.5 819.6 325.9 820.6 329.2 823.6L333.0 827.0L410.7 827.0C453.5 826.9 597.2 826.5 730.0 826.0C955.3 825.2 971.7 825.2 975.0 826.8C978.1 828.3 981.4 833.5 1003.4 871.3C1024.4 907.4 1028.3 914.7 1028.3 918.0C1028.3 922.4 1026.2 926.2 1022.5 928.6C1020.1 930.1 988.7 930.4 623.7 931.6C98.6 933.3 154.2 933.4 150.2 931.0ZM835.1 782.1C831.9 779.4 611.8 399.7 611.7 397.0C611.7 395.5 622.7 375.4 638.1 348.5L664.5 302.5L668.1 302.2C670.2 302.0 672.1 302.4 672.7 303.2C675.0 305.9 947.1 774.5 947.6 776.5C947.9 777.8 947.4 779.5 946.3 780.7C944.5 782.8 943.7 782.8 890.7 783.3C841.8 783.8 836.8 783.6 835.1 782.1Z"></path></svg></span><span class="cd" style="font-size: 24px; font-weight: 600;">Olivier Charest-Descomme</span></a>
+<nav style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center;">
+<a class="nav" href="#work">Work</a>
+<a class="nav" href="about.html">About</a>
+<a class="nav" href="about.html#contact" style="background: #C8FF00; color: #111111; padding: 12px 20px;">Contact</a>
+</nav>
+</div>
+</header>
+
+<section class="heroband" style="margin-bottom: 72px;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 64px 32px 36px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center;">
+<div class="cd" style="font-size: 15px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: #A9A9B2;">Product manager · Builder · Toronto</div>
+<h1 class="cd" style="margin: 0; font-size: clamp(40px, 5.6vw, 84px); line-height: 0.98; font-weight: 500; max-width: 980px; color: #FFFFFF;">I design the software, then I go build the thing.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C2C2CA; max-width: 680px;">I build the invisible systems behind physical products - from wrap software used by 3M to carbon fibre on the shop floor. Next: a product role where software meets manufacturing.</p>
+</div>
+<div class="cards">
+<a class="pc" href="make.html"><video class="m" src="media/bfb0f1283050436c80f8842144d16197.mp4" style="object-position: center 60%;" autoplay muted loop playsinline></video><span class="shade"></span><span class="lab"><span class="t">Make</span><span class="s">Multimatic · Neon Nine</span></span></a>
+<a class="pc big" href="zeno.html"><video class="m" src="media/156c9a2c318648876ddf805a81cc6733.mp4" autoplay muted loop playsinline></video><span class="shade"></span><span class="lab"><span class="t">Zeno</span><span class="s">Product · xix3D</span></span></a>
+<a class="pc" href="setselekta.html"><video class="m" src="media/319f96ca5f745ab0238a78442613b28f.mp4" autoplay muted loop playsinline aria-label="SetSelekta walkthrough: picking EDC Korea sets on Saturday and Sunday, then viewing the plan"></video><span class="shade"></span><span class="lab"><span class="t">Build</span><span class="s">SetSelekta</span></span></a>
+</div>
+</section>
+
+<div id="work"></div>
+
+<article class="chap">
+<div class="hero">
+<img class="m" src="media/a0c3b203e0cf6e8f27e0395c3b38bdb0.jpg" alt="Zeno render of a wrapped Lamborghini">
+<a class="herocard card" href="zeno.html"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="logo">xix3D</div><div class="meta">UX Designer → Product Manager</div></div><div class="meta">Oct 2022 - Apr 2025<span class="go">→</span></div></a>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h3 class="h3">Building Zeno</h3>
+<p class="body">xix3D is a small startup building Zeno, a 3D visualization and configuration platform for the automotive customization industry. Wrap shops, dealerships and enterprise partners use it to let customers design, preview and order vehicle customizations in real time.</p>
+<p class="body">I joined as employee #9 and the first designer of any kind, and was promoted to product manager a year in.</p>
+<p class="body">I owned Print &amp; Cut, the export pipeline that took designs from the screen to the plotter. I tested it in real production software at a wrap shop, and the first file out became a real wrap job.</p>
+<a class="more" href="zeno.html">Read the case study →</a>
+</div>
+<div class="colR">
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9;"><video class="mc" src="media/156c9a2c318648876ddf805a81cc6733.mp4" autoplay muted loop playsinline></video></div>
+<div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: #26262C;">
+<div style="background: #07070B; padding: 18px; color: #EDEDEB;"><div class="cd" style="font-size: 30px; font-weight: 500;">#9</div><div style="font-size: 13px; color: #A9A9B2;">Employee, first design hire</div></div>
+<div style="background: #07070B; padding: 18px; color: #EDEDEB;"><div class="cd" style="font-size: 30px; font-weight: 500;">3 types</div><div style="font-size: 13px; color: #A9A9B2;">Print, cut, print-and-cut exports</div></div>
+<div style="background: #07070B; padding: 18px; color: #EDEDEB;"><div class="cd" style="font-size: 30px; font-weight: 500;">4 kiosks</div><div style="font-size: 13px; color: #A9A9B2;">3M booth, SEMA 2024</div></div>
+<div style="background: #07070B; padding: 18px; color: #EDEDEB;"><div class="cd" style="font-size: 30px; font-weight: 500;">~350 shops</div><div style="font-size: 13px; color: #A9A9B2;">Recruited for Ford's installer network</div></div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; border-top: 1px solid #D4D4D0;">
+<div class="colL">
+<h3 class="h3">Role progression</h3>
+<p class="body"><strong>Oct 2023 - Apr 2025 · Product Manager.</strong> Took over full product direction. Managed the roadmap and backlog, ran feature specs and prioritization, and led cross-functional delivery for major partners.</p>
+<p class="body"><strong>Oct 2022 - Oct 2023 · UX Designer.</strong> Owned interaction design for a complex 3D tool that real shops used every day, and built the design foundations the product grew on.</p>
+</div>
+<div class="colR">
+<div style="position: relative; width: 100%; max-width: 760px; aspect-ratio: 2 / 1;"><img class="mc" src="media/1ce152610d783836870a2e5e730f84be.jpg" alt="Zeno on desktop, tablet and phone"></div>
+</div>
+</div>
+</article>
+
+<article class="chap">
+<div class="hero">
+<img class="m" src="media/abcee20d55f1085551928205f0ac28ce.jpg" alt="Ford Mustang GTD at dusk" style="object-position: center;">
+<a class="herocard card" href="make.html#sword"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="logo">Multimatic</div><div class="meta">Composites Technician<br>Carbon fibre components manufacturing</div></div><div class="meta">Oct 2025 - Jul 2026<span class="go">→</span></div></a>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h3 class="h3">Inside the factory floor</h3>
+<p class="body">I manufactured structural carbon fibre components for low-volume, high-performance vehicles. I took the role on purpose: after years of building software for people who make physical things, I wanted to work inside the environments that software is supposed to serve.</p>
+<h3 class="h3" style="padding-top: 8px;">In parallel: the sword</h3>
+<p class="body">At home I built a carbon fibre sword from scratch, with a programmable LED blade inside. It taught me mould making, composite layup and AI-assisted programming, end to end. ~40 hours over 9 months - a three-layer carbon wet layup in low-volume composite materials, and 144 programmed LEDs.</p>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #6A6A66;">Built at home, on my own time, with my own materials. No Multimatic tooling, processes, parts or IP.</p>
+<a class="more" href="make.html#sword">See the build →</a>
+</div>
+<div class="colR" style="background: #F2F2F0;">
+<div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px;">
+<div style="display: flex; flex-direction: column; gap: 8px;"><div style="position: relative; aspect-ratio: 3 / 4; background: #07070B; overflow: hidden;"><video class="m" src="media/f0a0489a51739bc5e023f509725adac1.mp4" poster="media/e319dbf43e6543f93ca163c965879635.jpg" preload="auto" autoplay muted loop playsinline></video></div><div style="font-size: 13px; color: #4E4E4B;">The finished blade, lit</div></div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><div style="position: relative; aspect-ratio: 3 / 4; background: #07070B; overflow: hidden;"><video class="m" src="media/cb40620994dd49de8a9ddddccae7fd80.mp4" poster="media/4f6a06018e9b512c58b05c638e8b7021.jpg" preload="auto" autoplay muted loop playsinline></video></div><div style="font-size: 13px; color: #4E4E4B;">Cutting the carbon layup</div></div>
+<div style="display: flex; flex-direction: column; gap: 8px;"><div style="position: relative; aspect-ratio: 3 / 4; background: #07070B; overflow: hidden;"><video class="m" src="media/3017424e3bb4b4c9186f1bc08bbbb16b.mp4" poster="media/8447ae334deec1403a5ca47fe2e6ea83.jpg" preload="auto" autoplay muted loop playsinline></video></div><div style="font-size: 13px; color: #4E4E4B;">Out of the mould</div></div>
+</div>
+</div>
+</div>
+</article>
+
+<article class="chap">
+<div class="hero" style="background: #0A0A0A; aspect-ratio: 16 / 9;">
+<img class="m" src="media/c90bc3d539f5b363af561812c733a607.jpg" alt="SetSelekta: More sets together. A festival pick grid with crew picks and a Knock2 vs Tiësto clash">
+<a class="herocard card" href="setselekta.html"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="logo">SetSelekta</div><div class="meta">Founder · design, code, ops</div></div><div class="meta">Nov 2025 - now<span class="go">→</span></div></a>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h3 class="h3">A festival plan for the whole crew</h3>
+<p class="body">Four friends, six stages, forty sets, one group chat. SetSelekta turns everyone's picks into one plan the whole crew can follow.</p>
+<p class="body">Used by my own crew to plan EDC Orlando and Ultra Miami.</p>
+<p class="body">I design, build, deploy and fix it alone, live at setselekta.com.</p>
+<a class="more" href="setselekta.html">Read the case study →</a>
+</div>
+<div class="colR" style="align-items: flex-start;">
+<div class="cd" style="color: #EDEDEB; font-size: 40px; line-height: 1.05; font-weight: 400; max-width: 620px;">Vanilla HTML, CSS and JavaScript on a PHP backend. Deliberately simple, so one person can own all of it.</div>
+</div>
+</div>
+</article>
+
+<article class="chap">
+<div class="hero">
+<img class="m" src="media/f50ce58f5aeb552064ea19fb3113116e.jpg" alt="Galaxy-print McLaren wrap">
+<a class="herocard card" href="make.html"><div style="display: flex; flex-direction: column; gap: 6px;"><div class="logo">Neon Nine Design</div><div class="meta">Creative Producer · 200+ projects</div></div><div class="meta">2020 - 2022<span class="go">→</span></div></a>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+<div class="colL">
+<h3 class="h3">From brief to car</h3>
+<p class="body">I took wrap and fabrication projects from "make it look awesome" to a paneled print file on a real vehicle. Designing for the printer and the installer is where I learned that the file is the product.</p>
+<a class="more" href="make.html">See the builds →</a>
+</div>
+<div class="colR">
+<div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+<div style="position: relative; aspect-ratio: 3 / 2;"><img class="m" src="media/41fce07d9a9f136ccc5b9ef63eb4b170.jpg" alt="Chrome Lamborghini Aventador with printed stripes"></div>
+<div style="position: relative; aspect-ratio: 3 / 2;"><img class="m" src="media/13d6902b9445fff016ee30956c4f3bec.jpg" alt="Toyota GR86 widebody"></div>
+<div style="position: relative; aspect-ratio: 3 / 2;"><img class="m" src="media/dcf8ae5e5e3b79ebb3dccb5e4e806bde.jpg" alt="Lamborghini Gallardo Spyder"></div>
+</div>
+</div>
+</div>
+</article>
+
+<footer id="contact" style="background: #111111; color: #EDEDEB;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 64px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<svg class="foot-mark" viewBox="0 0 1162 1014" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M11.1 1010.8C4.7 1007.7 1.0 1001.4 1.0 993.8C1.0 990.3 1.7 986.6 2.6 984.7C7.6 974.8 561.6 9.1 563.4 7.2C571.1 -1.4 586.5 -0.9 593.3 8.2C594.6 10.0 722.8 230.0 878.0 497.0C1158.1 978.7 1160.4 982.5 1160.8 988.6C1161.4 997.1 1157.8 1003.8 1150.5 1007.8C1146.9 1009.8 1206.7 1009.5 557.5 1011.5C-51.3 1013.4 16.5 1013.5 11.1 1010.8ZM729.5 977.9C942.9 977.2 1117.6 976.6 1117.8 976.5C1118.2 976.1 578.6 48.0 578.0 48.0C577.5 48.0 44.8 977.0 44.1 979.2C43.8 980.0 82.0 980.1 192.6 979.7C274.5 979.3 516.1 978.5 729.5 977.9ZM150.2 931.0C146.4 928.7 143.6 922.9 144.4 919.0C145.1 915.1 573.6 167.9 576.6 165.2C580.4 161.8 588.0 162.1 591.9 165.7C595.1 168.7 640.7 246.5 642.1 251.3C642.6 253.2 642.5 255.5 641.7 257.9C641.0 259.9 569.5 385.0 482.9 536.0C333.0 797.4 325.5 810.7 325.5 815.3C325.5 819.6 325.9 820.6 329.2 823.6L333.0 827.0L410.7 827.0C453.5 826.9 597.2 826.5 730.0 826.0C955.3 825.2 971.7 825.2 975.0 826.8C978.1 828.3 981.4 833.5 1003.4 871.3C1024.4 907.4 1028.3 914.7 1028.3 918.0C1028.3 922.4 1026.2 926.2 1022.5 928.6C1020.1 930.1 988.7 930.4 623.7 931.6C98.6 933.3 154.2 933.4 150.2 931.0ZM835.1 782.1C831.9 779.4 611.8 399.7 611.7 397.0C611.7 395.5 622.7 375.4 638.1 348.5L664.5 302.5L668.1 302.2C670.2 302.0 672.1 302.4 672.7 303.2C675.0 305.9 947.1 774.5 947.6 776.5C947.9 777.8 947.4 779.5 946.3 780.7C944.5 782.8 943.7 782.8 890.7 783.3C841.8 783.8 836.8 783.6 835.1 782.1Z"></path></svg>
+<div class="cd" style="font-size: 18px; text-transform: uppercase; letter-spacing: .04em; color: #A9A9B2;">Open to product roles - especially where software meets manufacturing · Toronto / GTA, hybrid or on-site · English / Français</div>
+<a href="mailto:ocharestdescomme@gmail.com" class="cd" style="color: #FFFFFF; font-size: clamp(30px, 4vw, 52px); font-weight: 500;">ocharestdescomme@gmail.com</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 22px;">
+<a class="nav" href="https://www.linkedin.com/in/ocharest-descomme/" style="color: #FFFFFF;">LinkedIn</a>
+<a class="nav" href="https://setselekta.com" style="color: #FFFFFF;">SetSelekta</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
+(function () {var go = function () { try { document.querySelectorAll('video').forEach(function (v) { v.muted = true; v.loop = true; v.playsInline = true; if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } }); } catch (e) {} }; go(); setTimeout(go, 400); setTimeout(go, 1500); try { document.querySelectorAll('video').forEach(function (v) { v.addEventListener('canplay', go, { once: true }); }); } catch (e) {}})();
+</script>
+</body>
+</html>
